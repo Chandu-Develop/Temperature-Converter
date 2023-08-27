@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:layout_marginTop="75sp"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Temperature Converter"
+        />
+
+    <LinearLayout
+        android:id="@+id/celcius_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/celcius"
+                android:layout_width="240dp"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:hint="Enter Celcius"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="28sp"
+                android:background="@drawable/edit_background"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <TextView
+                android:id="@+id/unit_celcius"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:gravity="bottom"
+                android:text=" ℃"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="36sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fahrenheit_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fahrenheit"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="Enter Fahrenheit"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="28sp"
+                android:background="@drawable/edit_background"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <TextView
+                android:id="@+id/unit_fahrenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:gravity="bottom"
+                android:text=" ℉"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="36sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/kelvin_box"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/kelvin"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="Enter Kelvin"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="28sp"
+                android:background="@drawable/edit_background"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <TextView
+                android:id="@+id/unit_kelvin"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:text=" K"
+                android:textColor="@color/black"
+                android:gravity="bottom"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="150sp"
+        android:layout_height="60sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:text="Clear"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/btn_color"
+        android:background="@drawable/rounded_corners"
+        android:textSize="28sp" />
+
+</LinearLayout>
+

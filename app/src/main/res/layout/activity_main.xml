@@ -41,7 +41,8 @@
                 android:fontFamily="sans-serif-condensed"
                 android:textSize="28sp"
                 android:background="@drawable/edit_background"
-                android:inputType="numberDecimal|numberSigned" />
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLength="15"/>
 
             <TextView
                 android:id="@+id/unit_celcius"
@@ -78,7 +79,8 @@
                 android:fontFamily="sans-serif-condensed"
                 android:textSize="28sp"
                 android:background="@drawable/edit_background"
-                android:inputType="numberDecimal|numberSigned" />
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLength="15"/>
 
             <TextView
                 android:id="@+id/unit_fahrenheit"
@@ -115,7 +117,8 @@
                 android:fontFamily="sans-serif-condensed"
                 android:textSize="28sp"
                 android:background="@drawable/edit_background"
-                android:inputType="numberDecimal|numberSigned" />
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLength="15"/>
 
             <TextView
                 android:id="@+id/unit_kelvin"
